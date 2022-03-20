@@ -8,7 +8,6 @@ ThisBuild / organizationName := "example"
 lazy val root = (project in file("."))
   .settings(
     name := "ScalaGAMS",
-    libraryDependencies += scalaTest % Test,
     fork := true,
     javaOptions += "-Djava.library.path=" + file(".").getAbsolutePath + "/lib/GAMS",
   )
