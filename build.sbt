@@ -8,6 +8,7 @@ lazy val root = (project in file("."))
     name := "ScalaGAMS",
     fork := true,
     javaOptions += "-Djava.library.path=" + file(".").getAbsolutePath + "/lib/GAMS",
+    //javaOptions += "-Djava.library.path=" + file(".").getAbsolutePath + "/lib/GAMS_MAC",
   )
 
 // See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.

@@ -37,3 +37,9 @@ Expected output:
 [info] x(san-diego, topeka):, level    = 275.0, marginal = 0.0
 [success] Total time: 4 s, completed Mar 20, 2022 5:34:00 PM
 ```
+
+## Running on macOS
+
+The `Transport1.scala` is also runable on macOS. The only change required is to set the "-Djava.library.path=" variable to "/lib/GAMS_MAC" in build.sbt (just uncomment one of the 2 options). 
+
+These librairies where found in the APIs installed after downloading GAMS 37. Librairies path was the following: "/Library/Frameworks/GAMS.framework/Versions/37/Resources/apifiles/Java" (note that this may not be exactly the same path on another computer.) 
